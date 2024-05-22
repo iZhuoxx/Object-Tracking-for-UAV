@@ -1,0 +1,8 @@
+prefix=/home/clover/Desktop/ego_planner/devel
+
+Name: moving_obstacles
+Description: Description of moving_obstacles
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: traj_opt traj_utils

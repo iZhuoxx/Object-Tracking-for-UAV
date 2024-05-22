@@ -1,0 +1,8 @@
+prefix=/home/clover/Desktop/ego_planner/devel
+
+Name: controller_msgs
+Description: Description of controller_msgs
+Version: 0.0.1
+Cflags: -I/home/clover/Desktop/ego_planner/devel/include -I/home/clover/Desktop/ego_planner/src/mavros_controllers/controller_msgs/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs sensor_msgs message_runtime std_msgs

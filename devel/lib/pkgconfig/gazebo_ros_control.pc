@@ -1,0 +1,8 @@
+prefix=/home/clover/Desktop/ego_planner/devel
+
+Name: gazebo_ros_control
+Description: Description of gazebo_ros_control
+Version: 2.9.2
+Cflags: -I/home/clover/Desktop/ego_planner/src/gazebo_ros_control/include
+Libs: -L${prefix}/lib -lgazebo_ros_control -ldefault_robot_hw_sim
+Requires: roscpp std_msgs controller_manager control_toolbox pluginlib hardware_interface transmission_interface joint_limits_interface urdf angles

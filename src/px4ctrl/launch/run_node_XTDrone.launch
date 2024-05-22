@@ -1,0 +1,15 @@
+<launch>
+        <node pkg="px4ctrl" type="px4ctrl_node" name="px4ctrl" output="screen">
+            <!-- <remap from="~odom" to="/vicon_imu_ekf_odom" /> -->
+            <remap from="odom" to="/iris_0/mavros/local_position/odom" />
+            <remap from="cmd" to="/xtdrone/iris_0/planning/pos_cmd" />
+            <remap from="mavros/state" to="/iris_0/mavros/state" />
+            <remap from="mavros/imu/data" to="/iris_0/mavros/imu/data" />
+            <remap from="mavros/rc/in" to="/iris_0/mavros/rc/in" />
+            <remap from="mavros/setpoint_raw/attitude" to="/iris_0/mavros/setpoint_raw/attitude" />
+            <remap from="mavros/set_mode" to="/iris_0/mavros/set_mode" />
+            <remap from="mavros/cmd/arming" to="/iris_0/mavros/cmd/arming" />
+            <remap from="mavros/cmd/command" to="/iris_0/mavros/cmd/command" />
+            <rosparam command="load" file="$(find px4ctrl)/config/ctrl_param_fpv.yaml" />
+        </node>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/clover/Desktop/ego_planner/devel
+
+Name: offboard_pkg
+Description: Description of offboard_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
