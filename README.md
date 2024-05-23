@@ -1,7 +1,7 @@
 
 # UAV Motion Planning and Control
 
-Welcome to the UAV Motion Planning and Control repository! This project is based on the EGO Planner v2 and includes a PX4 controller that implements both PID and LQR controllers for executing UAV trajectories. The workspace supports simulation in two environments: PX4-Autopilot and XTDrone.
+Welcome to the UAV Motion Planning and Control repository! This project is based on the EGO Planner v2 and includes a PX4 controller that implements both PID and LQR controllers for executing UAV trajectories. The workspace supports simulation in two environments: PX4-Autopilot and XTDrone. A visual algorithm package for target tracking will be coming soon in the future.
 
 ## Features
 
@@ -34,6 +34,7 @@ Clone this repository to your local machine:
 cd catkin_ws
 git clone https://github.com/iZhuoxx/Object-Tracking-for-UAV.git
 catkin_make
+source devel/setup.bash
 ```
 
 ## Simulation
@@ -97,7 +98,7 @@ Please follow these steps to operate the UAV:
 
 5. **Set the Target with 2D Nav Goal:**
 
-    - Use the "2D Nav Goal" tool in Rviz to set the target destination for the UAV.
+    - Use the "2D Nav Goal" tool in Rviz to set the target destination for the UAV. Now the drone will fly towards the target point and you can visualize the output of the motion planner algorithm.
 
 ### Viewing the Simulation
 
