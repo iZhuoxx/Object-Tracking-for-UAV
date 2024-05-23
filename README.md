@@ -70,6 +70,10 @@ To simulate the UAV in the XTDrone platform, follow these steps:
     sh XTbot_gazebo.sh
     ```
 
+### Result of Simulation
+
+![Example GIF](result/egov2demo.gif)
+
 ## Usage
 
 Please follow these steps to operate the UAV:
